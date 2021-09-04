@@ -1,0 +1,67 @@
+---
+title: "Fresh Bread"
+date: 2021-02-17T07:41:56-06:00
+draft: false
+description: "Get the taste of home-made bread without the work. Choose the style of freshly baked bread that matches your craving."
+---
+
+<section class="prod-hero">
+  <div class="prod-accent"></div>
+  <h1>Freshly Baked Bread</h1>
+  <div class="p-accent"></div>
+  <ul class="breadcrumb">
+    <li><a href="/">HOME > </a></li>
+      <li><a href="/products/baked-goods/">BAKED GOODS > </a></li>
+    <li class="current">{{<param "title" >}}</li>
+  </ul>
+</section>
+
+<section class="p-page">
+  <div class="product-image">
+    <img src="/images/bread.jpg" alt="Freshly baked bread">
+    <p>There's nothing like a good soft loaf of home-made style bread. Choose from four different styles. Price is per loaf</p>
+  </div>
+  <div class="product-options">
+    <p>Keep yourself stocked up. If you're needing more than a loaf or two, order in advance and select the date needed at checkout. We'll have it ready for you by then.  </p>
+    <select class="" id="bread" name="bread" onchange="loafChoice(this.value)">
+      <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
+      <option value="White">White</option>
+      <option value="Wheat">Wheat</option>
+      <option value="Sourdough">Sourdough</option>
+      <option value="Italian Parmesan">Italian Parmesan</option>
+      <option value="Mini-Banana Bread">Mini Loaf - Banana Bread</option>
+      <option value="Mini-Pumpkin Bread">Mini Loaf - Pumpkin Bread</option>
+    </select>
+    <label for="quantity">HOW MANY LOAVES? </label>
+    <input type="number" id="quantity" value="1" name='quantity' onchange="quantity(this.value)">
+
+    <hr class="p-page-hr">
+    <div class="prod-button">
+      <div class="price">
+        <span>$</span>
+        <span id="price">3.50</span>
+        <p>Per Loaf</p>
+      </div>
+      <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
+      data-item-id="Fresh Bread"
+      data-item-price="3.25"
+      data-item-url="/products/baked-goods/fresh-bread"
+      data-item-description="Freshly Baked Loaf of Bread"
+      data-item-image="/images/bread.jpg"
+      data-item-name="Freshly Baked Bread"
+      data-item-custom1-name="Bread"
+      data-item-custom1-options="White [+0.50] | Wheat [+1.25] | Sourdough  [+2.25] | Italian Parmesan [+1.25] | Mini-Banana Bread | Mini-Pumpkin Bread"
+      data-item-custom1-value="White"
+      data-item-quantity="1"
+      data-item-custom2-name = " Date Needed By:               Month:"
+      data-item-custom2-options = "January | February | March | April | May | June | July | August | September | October | November | December"
+      data-item-custom2-required="true"
+      data-item-custom3-name = 'Day:'
+      data-item-custom3-options = "1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31"
+      data-item-custom3-required="true"
+      >ADD TO CART <img src="/images/cart-white.png" alt="add-to-cart" style="height: 12px; margin-left: 8px;"></button>
+    </div>
+  </div>
+
+</section>
+<hr>

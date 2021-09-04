@@ -1,0 +1,81 @@
+---
+title: "Deli Trays"
+date: 2021-02-11T10:58:02-06:00
+draft: false
+description: "Get your party started with a deli meat and cheese tray from Heritage. Full of delicious meats and cheeses, and fresh veggies"
+---
+<section class="prod-hero">
+  <div class="prod-accent"></div>
+  <h1>Deli Trays</h1>
+  <div class="p-accent"></div>
+  <ul class="breadcrumb">
+    <li><a href="/">HOME > </a></li>
+      <li><a href="/products/">Products > </a></li>
+    <li class="current">{{<param "title" >}}</li>
+  </ul>
+</section>
+
+<!-- Sandwich Product page section -->
+<section class="p-page">
+  <div class="product-image">
+    <img src="/images/deli-tray-home.webp" alt="deli trays" onerror=this.src="/images/deli-tray-home.png">
+    <p>Need lunch meat for the week?  Or a deli tray for the party?  With an inventory of fresh, high-quality meats and cheeses, we can fill the need. Choose the size you need. Most orders will be ready for pickup within 24 hours.</p>
+  </div>
+  <div class="product-options">
+    <select class="" id="tray-size" name="tray-size" onchange="traySize(this.value)">
+      <option value="select-size" disabled selected hidden>CHOOSE YOUR SIZE</option>
+      <option value="Small">Small (Serves 8-12)</option>
+      <option value="Medium">Medium (Serves 15-18)</option>
+      <option value="Large">Large (Serves 20-25)</option>
+    </select>
+    <div class="meatsandcheese">
+      <div class="meats">
+        <p class="bold">MEAT OPTIONS:</p>
+        <p>German Balogna</p>
+        <p>Roast Beef</p>
+        <p>Black Forest Ham</p>
+        <p>Carving Ham</p>
+        <p>Turkey Breast</p>
+        <p>Cajun Turkey</p>
+        <p>Sweet Lebanon Balogna</p>
+      </div>
+      <div class="cheeses">
+        <p class="bold">CHEESE OPTIONS:</p>
+        <p>American</p>
+        <p>Colby</p>
+        <p>Cojack (Marble)</p>
+        <p>Muenster</p>
+        <p>Cheddar</p>
+        <p>PepperJack</p>
+        <p>Swiss</p>
+      </div>
+    </div>
+    <hr>
+    <div class="">
+      <p>Tray will not come with each variety of meat and cheese. If it's important which meats and cheeses you have, you can leave us a note at checkout.</p>
+    </div>
+    <hr>
+    <br><br>
+
+
+  <div class="prod-button">
+    <div class="price">
+      <span>$</span>
+      <span id="tray-price">24.99</span>
+    </div>
+    <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
+    data-item-id="Deli Tray"
+    data-item-price="24.99"
+    data-item-url="/products/deli-trays"
+    data-item-description=""
+    data-item-image="/images/Design-sandwich.jpg"
+    data-item-name="Deli Meat and Cheese Tray"
+    data-item-custom1-name="Size"
+    data-item-custom1-options="Small | Medium[+10.00] | Large[+25.00]"
+    data-item-custom1-value="Small"
+    data-item-custom2-name="Notes"
+    data-item-custom2-type="textarea"
+    >ADD TO CART <img src="/images/cart-white.png" alt="add-to-cart" style="height: 12px; margin-left: 8px;"></button>
+  </div>
+  <hr>
+</section>

@@ -1,0 +1,13 @@
+{
+   "Build Your Own": {
+       "image": "/images/Design-sandwich.jpg"
+       "name": "Design Your Own",
+       "description": "Build out your own custom taste by building your own custom sandwich. Choose your bread, meats, and cheeses, and anything else you want on it"
+   }
+
+   "Heritage Ham Sandwich": {
+       "image": "/images/Heritage-Ham.jpg"
+       "name": "Heritage Ham Sandwich",
+       "description": "Build out your own custom taste by building your own custom sandwich. Choose your bread, meats, and cheeses, and anything else you want on it"
+   }
+}

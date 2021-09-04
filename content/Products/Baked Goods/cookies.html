@@ -1,0 +1,68 @@
+---
+title: "Cookies"
+date: 2021-02-17T07:43:35-06:00
+draft: false
+description: "Our cookies are a perfect companion to a glass of milk or coffee. Lot of fresh baked cookie flavors."
+---
+
+<section class="prod-hero">
+  <div class="prod-accent"></div>
+  <h1>Freshly Baked Cookies</h1>
+  <div class="p-accent"></div>
+  <ul class="breadcrumb">
+    <li><a href="/">HOME > </a></li>
+      <li><a href="/products/baked-goods/">BAKED GOODS > </a></li>
+    <li class="current">{{<param "title" >}}</li>
+  </ul>
+</section>
+
+<section class="p-page">
+  <div class="product-image">
+    <img src="/images/cookies.jpg" alt="Freshly baked cookies">
+    <p>Fill the cookie jar with the best cookies available. They go great with milk, coffee, or almost anything. </p>
+  </div>
+  <div class="product-options">
+    <p>Cookies sold by the the dozen. If you need to really stock up, order at least two days in advance and provide the date you need them by at checkout.</p>
+    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
+      <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
+      <option value="Chocolate Chip">Chocolate Chip</option>
+      <option value="Cowboy">Cowboy</option>
+      <option value="Molasses Crinkle">Molasses Crinkle</option>
+      <option value="Monster">Monster</option>
+      <option value="Soft Peanut Butter">Soft Peanut Butter</option>
+      <option value="Sugar Cookies-Half Dozen">Sugar Cookies - Half Dozen</option>
+      <option value="No Bake Cookies-Half Dozen">No Bake Cookies - Half Dozen</option>
+    </select>
+    <label for="quantity">HOW MANY? </label>
+    <input type="number" id="quantity" value="1" name='quantity' onchange="quantity(this.value)">
+
+    <hr class="p-page-hr">
+    <div class="prod-button">
+      <div class="price">
+        <span>$</span>
+        <span id="price">3.75</span>
+        <p>Per Dozen</p>
+      </div>
+      <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
+      data-item-id="Fresh Cookies"
+      data-item-price="3.75"
+      data-item-url="/products/baked-goods/cookies"
+      data-item-description="Freshly Baked Cookies"
+      data-item-image="/images/cookies.jpg"
+      data-item-name="Freshly Baked Cookies"
+      data-item-custom1-name="Flavor"
+      data-item-custom1-options="Chocolate Chip| Cowboy | Molasses Crinkle | Monster | Soft Peanut Butter | Sugar Cookies-Half Dozen | No Bake Cookies-Half Dozen"
+      data-item-custom1-value="Chocolate Chip"
+      data-item-quantity="1"
+      data-item-custom2-name = " Date Needed By:               Month:"
+      data-item-custom2-options = "January | February | March | April | May | June | July | August | September | October | November | December"
+      data-item-custom2-required="true"
+      data-item-custom3-name = 'Day:'
+      data-item-custom3-options = "1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31"
+      data-item-custom3-required="true"
+      >ADD TO CART <img src="/images/cart-white.png" alt="add-to-cart" style="height: 12px; margin-left: 8px;"></button>
+    </div>
+  </div>
+
+</section>
+<hr>

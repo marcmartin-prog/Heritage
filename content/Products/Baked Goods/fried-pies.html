@@ -1,0 +1,66 @@
+---
+title: "Fried Pies"
+date: 2021-02-25T11:45:45-06:00
+draft: false
+description: "Go for our freshly baked southern fried pies"
+---
+
+
+<section class="prod-hero">
+  <div class="prod-accent"></div>
+  <h1>Freshly Baked Fried Pies</h1>
+  <div class="p-accent"></div>
+  <ul class="breadcrumb">
+    <li><a href="/">HOME > </a></li>
+      <li><a href="/products/baked-goods/">BAKED GOODS > </a></li>
+    <li class="current">{{<param "title" >}}</li>
+  </ul>
+</section>
+
+<section class="p-page">
+  <div class="product-image">
+    <img src="/images/fried-pie.jpg" alt="Freshly baked fried-pies">
+    <p>Bite into these perfectly baked, fruit-filled fried pies and you'll be glad you did.  </p>
+  </div>
+  <div class="product-options">
+    <p>Choose your flavor below. If you need a bulk order, let us know at least two days in advance and supply the date you need them by at checkout.</p>
+    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
+      <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
+      <option value="Apple">Apple</option>
+      <option value="Cherry">Cherry</option>
+      <option value="Chocolate">Chocolate</option>
+      <option value="Peach">Peach</option>
+    </select>
+    <label for="quantity">HOW MANY? </label>
+    <input type="number" id="quantity" value="1" name='quantity' onchange="quantity(this.value)">
+
+    <hr class="p-page-hr">
+    <div class="prod-button">
+      <div class="price">
+        <span>$</span>
+        <span id="price">3.50</span>
+        <p>Per Case</p>
+      </div>
+      <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
+      data-item-id="Fresh Fried Pies"
+      data-item-price="3.50"
+      data-item-url="/products/baked-goods/fried-pies"
+      data-item-description="Freshly Baked Fried Pies"
+      data-item-image="/images/cookies.jpg"
+      data-item-name="Freshly Baked Fried Pies"
+      data-item-custom1-name="Flavor"
+      data-item-custom1-options="Apple | Cherry | Chocolate | Peach"
+      data-item-custom1-value="Apple"
+      data-item-quantity="1"
+      data-item-custom2-name = " Date Needed By:               Month:"
+      data-item-custom2-options = "January | February | March | April | May | June | July | August | September | October | November | December"
+      data-item-custom2-required="true"
+      data-item-custom3-name = 'Day:'
+      data-item-custom3-options = "1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31"
+      data-item-custom3-required="true"
+      >ADD TO CART <img src="/images/cart-white.png" alt="add-to-cart" style="height: 12px; margin-left: 8px;"></button>
+    </div>
+  </div>
+
+</section>
+<hr>

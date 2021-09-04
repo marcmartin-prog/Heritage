@@ -1,0 +1,68 @@
+---
+title: "Cupcakes"
+date: 2021-02-17T07:43:05-06:00
+draft: false
+description: "From chocolate chip, to coconut topped, we have lots of fresh cupcakes to suit your tastes."
+---
+
+<section class="prod-hero">
+  <div class="prod-accent"></div>
+  <h1>Freshly Baked Cupcakes</h1>
+  <div class="p-accent"></div>
+  <ul class="breadcrumb">
+    <li><a href="/">HOME > </a></li>
+      <li><a href="/products/baked-goods/">BAKED GOODS > </a></li>
+    <li class="current">{{<param "title" >}}</li>
+  </ul>
+</section>
+
+<section class="p-page">
+  <div class="product-image">
+    <img src="/images/cupcake.jpg" alt="Freshly baked cupcakes">
+    <p>From chocolate chip to coconut topped, choose your favorite style of deliciousness!</p>
+  </div>
+  <div class="product-options">
+    <p>Cupcakes sold by the half dozen. Choose your style or choose assortment and we'll get you some of our favorites!</p>
+    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
+      <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
+      <option value="Assortment">Assortment</option>
+      <option value="Chocolate With Chocolate Icing">Chocolate With Chocolate Icing</option>
+      <option value="Chocolate With White Icing">Chocolate With White Icing</option>
+      <option value="Coconut">Coconut</option>
+      <option value="Red Velvet">Red Velvet</option>
+      <option value="Vanilla">Vanilla</option>
+      <option value="Magic Cupcake">Magic Cupcake</option>
+    </select>
+    <label for="quantity">HOW MANY HALF DOZEN? </label>
+    <input type="number" id="quantity" value="1" name='quantity' onchange="quantity(this.value)">
+
+    <hr class="p-page-hr">
+    <div class="prod-button">
+      <div class="price">
+        <span>$</span>
+        <span id="price">4.50</span>
+        <p>Per Dozen</p>
+      </div>
+      <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
+      data-item-id="Fresh Cupcakes"
+      data-item-price="4.50"
+      data-item-url="/products/baked-goods/cupcakes"
+      data-item-description="Freshly Baked Cupcakes"
+      data-item-image="/images/cupcake.jpg"
+      data-item-name="Freshly Baked Cupcakes"
+      data-item-custom1-name="Flavor"
+      data-item-custom1-options="Chocolate With Chocolate Icing | Chocolate With White Icing | Coconut | Red Velvet | Vanilla | Magic Cupcake"
+      data-item-custom1-value="Chocolate With Chocolate Icing"
+      data-item-quantity="1"
+      data-item-custom2-name = " Date Needed By:               Month:"
+      data-item-custom2-options = "January | February | March | April | May | June | July | August | September | October | November | December"
+      data-item-custom2-required="true"
+      data-item-custom3-name = 'Day:'
+      data-item-custom3-options = "1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31"
+      data-item-custom3-required="true"
+      >ADD TO CART <img src="/images/cart-white.png" alt="add-to-cart" style="height: 12px; margin-left: 8px;"></button>
+    </div>
+  </div>
+
+</section>
+<hr>
