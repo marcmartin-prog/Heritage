@@ -28,6 +28,10 @@ function startOver(){
 }
 
 
+function hidePopup(){
+  document.querySelector('#popup').style.display = 'none'
+}
+
 /*mobile menu code*/
 
 function noScroll(){

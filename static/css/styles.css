@@ -695,6 +695,16 @@ margin: 0 10px 25px 5px;
   margin: 2px 0 0 10px !important;
 }
 
+.popup{
+  width: 80%;
+  position: absolute;
+  top: 25vh;
+  left: 5vw;
+  background-color: rgba(232, 210, 174, 0.9);
+  z-index: 10;
+  padding: 0.97rem;
+}
+
 .privacy{
   position: sticky;
   bottom: 0;
@@ -1214,6 +1224,11 @@ margin: 0 10px 25px 5px;
     left: 23vw;
     top: 70px;
     opacity: 0.3;
+  }
+
+  .popup{
+    width: 50%;
+    left: 20%;
   }
 
   .p-page{
