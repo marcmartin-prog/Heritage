@@ -18,6 +18,24 @@ function accept(){
 privacyPolicy();
 
 
+//horizontal scrolling for review Section
+
+function moveLeft(){
+  let slider = document.getElementById('review-parent');
+  let review = document.querySelector(".review");
+  scrollByWidth = review.clientWidth;
+  slider.scrollBy({left: -scrollByWidth, top: 0, behavior: 'smooth'});
+
+}
+
+function moveRight(){
+  let slider = document.getElementById('review-parent');
+  let review = document.querySelector(".review");
+  scrollByWidth = review.clientWidth;
+  slider.scrollBy({left: scrollByWidth, top: 0, behavior: 'smooth'});
+
+}
+
 
 
 // start over code
@@ -480,14 +498,6 @@ function traySize(){
 }
 
 
-//horizontal scrolling for review Section
 
-function moveLeft(){
-  document.getElementById('review-parent').scrollLeft -=1000;
-}
-
-function moveRight(){
-  document.getElementById('review-parent').scrollRight -=1000;
-}
 
 //API Testing code
