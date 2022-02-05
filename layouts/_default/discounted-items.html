@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ block "main" . }}
+    <section class="prod-hero">
+      <h1>Weekly Discounts</h1>
+      <div class="p-accent"></div>
+      <ul class="breadcrumb">
+        <li><a href="/">HOMEPAGE > </a></li>
+        <li class="current">{{.Params.title}}</li>
+      </ul>
+      <p>Discover our weekly discounts on quality deli meats and cheeses!</p>
+    </section>
+    <section>
+      <div class="">
+        <h3>{{.Params.first-discounted-prod}}</h3>
+      </div>
+    </section>
+    {{ end }}
+    {{partial "footer.html" . }}
+  </body>
+</html>
