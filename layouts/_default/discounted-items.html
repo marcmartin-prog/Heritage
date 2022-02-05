@@ -5,25 +5,30 @@
   <body>
     {{ partial "header.html" . }}
     {{ block "main" . }}
-    <section class="prod-hero">
-      <h1>Weekly Discounts</h1>
+    <section class="prod-hero margin-top">
+
       <div class="p-accent"></div>
+      <h1>Weekly Discounts</h1>
       <ul class="breadcrumb">
         <li><a href="/">HOMEPAGE > </a></li>
         <li class="current">{{.Params.title}}</li>
       </ul>
-      <p>Discover our weekly discounts on quality deli meats and cheeses!</p>
+      <p class="big-text">Discover our weekly discounts on quality deli meats and cheeses!</p>
 
     </section>
-    <section>
-      <div class="discount">
-        <h3>{{.Params.firstdiscountedprod}}</h3>
-        <h3>{{.Params.percentage1}}% off</h3>
+    <section class="">
+      <h2>For This Week:</h2>
+      <div class="discounts">
+        <div class="discount">
+          <h3>{{.Params.firstdiscountedprod}}</h3>
+          <h3>{{.Params.percentage1}}% off</h3>
+        </div>
+        <div class="discount">
+          <h3>{{.Params.seconddiscountedprod}}</h3>
+          <h3>{{.Params.percentage2}}% off</h3>
+        </div>
       </div>
-      <div class="discount">
-        <h3>{{.Params.seconddiscountedprod}}</h3>
-        <h3>{{.Params.percentage2}}% off</h3>
-      </div>
+     <p>Come back next week for updated discounts to make sure you don't miss out!</p>
     </section>
     {{ end }}
     {{partial "footer.html" . }}

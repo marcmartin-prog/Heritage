@@ -283,6 +283,10 @@ footer p{
   opacity: 1 !important;
 }
 
+.big-text{
+  font-size: 20px;
+}
+
 .bold{
   font-weight: 600;
 }
@@ -1423,6 +1427,11 @@ h4{
     margin-top: 70px;
   }
 
+  .discounts{
+    display: flex;
+    gap: 20%;
+  }
+
   .face{
     height: 100px;
     width: 112px;
@@ -1485,6 +1494,10 @@ h4{
 
   .main-btns .btn-tan{
     margin-top: 32px;
+  }
+
+  .margin-top{
+    padding-top: 8rem;
   }
 
   .menu-item{
