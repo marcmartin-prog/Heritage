@@ -12,4 +12,4 @@ collections:
       - {label: "First Discounted Product", name: "first-discounted-prod", widget: "string"}
       - {label: "Percentage of Discount", name: "percentage1", widget: "number"}
       - {label: "Second Discounted Product", name: "second-discounted-prod", widget: "string"}
-      - {label: "Percentage of Discount", name: "percentage1", widget: "number"}
+      - {label: "Percentage of Discount", name: "percentage2", widget: "number"}
