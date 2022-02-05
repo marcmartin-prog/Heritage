@@ -6,4 +6,5 @@ firstdiscountedprod: Carving Ham
 percentage1: 10
 seconddiscountedprod: Mild Cheddar
 percentage2: 10
+layout: discounted-items
 ---

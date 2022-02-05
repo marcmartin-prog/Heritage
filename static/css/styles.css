@@ -461,6 +461,11 @@ margin: 0 10px 25px 5px;
   margin: 0 0 0 5px;
 }
 
+.discount{
+  display: flex;
+  gap: 1rem;
+}
+
 .footer-link{
   border-bottom: solid 2px #640d14;
   padding-bottom: 4px;

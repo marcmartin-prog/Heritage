@@ -10,8 +10,8 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Starting Date", name: "startdate", widget: "datetime"}
-      - {label: "Ending Date", name: "enddate", widget: "datetime"}
+      - {label: "Starting Date", name: "startdate", widget: "datetime" time_format: "false"}
+      - {label: "Ending Date", name: "enddate", widget: "datetime" time_format: "false"}
       - {label: "First Discounted Product", name: "firstdiscountedprod", widget: "string"}
       - {label: "Percentage of Discount", name: "percentage1", widget: "number"}
       - {label: "Second Discounted Product", name: "seconddiscountedprod", widget: "string"}

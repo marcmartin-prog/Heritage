@@ -13,10 +13,16 @@
         <li class="current">{{.Params.title}}</li>
       </ul>
       <p>Discover our weekly discounts on quality deli meats and cheeses!</p>
+
     </section>
     <section>
-      <div class="">
-        <h3>title</h3>
+      <div class="discount">
+        <h3>{{.Params.firstdiscountedprod}}</h3>
+        <h3>{{.Params.percentage1}}% off</h3>
+      </div>
+      <div class="discount">
+        <h3>{{.Params.seconddiscountedprod}}</h3>
+        <h3>{{.Params.percentage2}}% off</h3>
       </div>
     </section>
     {{ end }}
