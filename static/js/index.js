@@ -341,11 +341,11 @@ let count = document.querySelector('#quantity');
  function loafChoice(){
    button.setAttribute("data-item-custom1-value", bread.value);
    if(bread.value === "Italian Parmesan" || bread.value === "Wheat"){
-     document.querySelector('#price').innerText = '4.50';
-   } else if (bread.value === 'Sourdough'){
      document.querySelector('#price').innerText = '5.50';
+   } else if (bread.value === 'Sourdough'){
+     document.querySelector('#price').innerText = '6.50';
    }else if (bread.value === 'White'){
-       document.querySelector('#price').innerText = '3.50';
+       document.querySelector('#price').innerText = '4.50';
      }else if (bread.value === 'Mini-Banana Bread' || bread.value === 'Mini-Pumpkin Bread'){
        document.querySelector('#price').innerText = '3.25';
      }
@@ -354,9 +354,9 @@ let count = document.querySelector('#quantity');
  function cakeChoice(){
    button.setAttribute("data-item-custom1-value", bread.value);
    if(bread.value === 'Carrot Layered' || bread.value === 'Coconut Layered' || bread.value === 'German Chocolate Layered' || bread.value === "Italian Cream Layered"){
-     document.querySelector('#price').innerText = "11.25";
+     document.querySelector('#price').innerText = "12.49";
    } else if(bread.value === '8x8 Chocolate Cake'){
-     document.querySelector('#price').innerText = "4.25";
+     document.querySelector('#price').innerText = "4.89";
    } else{
      document.querySelector('#price').innerText = "3.75";
    }
@@ -367,10 +367,10 @@ let count = document.querySelector('#quantity');
  }
 
  function pieChoice(){
-   if(bread.value === 'Pecan'){
-     document.querySelector('#price').innerText = "12.99";
+   if(bread.value === 'Pecan' || bread.value.includes("Ready")){
+     document.querySelector('#price').innerText = "14.99";
    }else{
-     document.querySelector('#price').innerText = "10.99";
+     document.querySelector('#price').innerText = "11.99";
    }
    button.setAttribute("data-item-custom1-value", bread.value);
  }
@@ -378,10 +378,10 @@ let count = document.querySelector('#quantity');
  function cakeSize(){
    button.setAttribute("data-item-custom2-value", cakes.value);
    if(cakes.value === "whole"){
-     document.querySelector('#price').innerText = 19.99;
+     document.querySelector('#price').innerText = 24.99;
    }
   else{
-   document.querySelector('#price').innerText = 11.25;
+   document.querySelector('#price').innerText = 12.49;
    }
  }
 
