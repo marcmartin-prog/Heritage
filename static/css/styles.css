@@ -738,6 +738,7 @@ margin: 0 10px 25px 5px;
   height: 104px;
   width: 104px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .options div{
