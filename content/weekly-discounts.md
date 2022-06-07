@@ -1,10 +1,10 @@
 ---
 title: Weekly Discounts
+layout: discounted-items
 startdate: 2022-02-14T20:32:56.156Z
 enddate: 2022-02-26T20:32:56.166Z
-firstdiscountedprod: Hard Salami
+firstdiscountedprod: Carving Ham
 percentage1: 10
-seconddiscountedprod: Cojack Cheese
+seconddiscountedprod: Provolone Cheese
 percentage2: 10
-layout: discounted-items
 ---
