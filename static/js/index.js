@@ -140,6 +140,7 @@ generateDots();
 const button = document.querySelector('#add-to-cart');
 let cakes = document.querySelector('#cakes');
 let bread = document.querySelector('#bread');
+let roll = document.querySelector('#roll');
 let meat = document.querySelector('#meat');
 let doubleMeat = document.querySelector('#d-meat');
 let tripleMeat = document.querySelector('#t-meat');
@@ -385,6 +386,17 @@ let count = document.querySelector('#quantity');
    }
  }
 
+ function rollChoice(){
+   button.setAttribute("data-item-custom1-value", roll.value);
+   if(roll.value === "Raspberry Cream Cheese"){
+     document.querySelector('#price').innerText = 5.99;
+   }
+  else{
+   document.querySelector('#price').innerText = 5.79;
+   }
+ }
+
+
 
 //dynamically changes the price on the product page
 
@@ -489,11 +501,11 @@ function traySize(){
   let tray = document.querySelector('#tray-size');
   button.setAttribute("data-item-custom1-value", tray.value);
   if(tray.value.includes("Medium", 0)){
-    document.querySelector('#tray-price').innerText = "34.99";
-  } else if(tray.value.includes("Large", 0)){
     document.querySelector('#tray-price').innerText = "49.99";
+  } else if(tray.value.includes("Large", 0)){
+    document.querySelector('#tray-price').innerText = "69.99";
   } else if(tray.value.includes("Small", 0)){
-    document.querySelector('#tray-price').innerText = "24.99";
+    document.querySelector('#tray-price').innerText = "29.99";
   }
 }
 
