@@ -27,43 +27,34 @@
 
 <!DOCTYPE html>
 <html>
-    <head><title>Templates</title></head>
 
-    <body>
-        <div id="snipcart-templates">
-          <customer-details>
-            <div class="snipcart-customer-details snipcart__box">
-    <!-- Header -->
-           <div class="snipcart-customer-details__header snipcart__box--header">
-             <div class="snipcart__box--title">
-               <h1 class="snipcart-customer-details__title snipcart__font--subtitle">
-                 {{ $localize('customer_details.title') }}
-              </h1>
+<head>
+  <title>Templates</title>
+</head>
 
-            </div>
-         </div>
-
-    <!-- Basic infos -->
-       <div class="snipcart-customer-details__infos snipcart__font--std">
-           This order must be picked up at our store in Strawberry Arkansas
-           <br/>
-           {{ customer.billingAddress.name  }}
-          <br v-if="customer.billingAddress.name" />
-           {{ customer.email }}
-       </div>
+<body>
+  <div id="snipcart-templates">
 
 
-          </customer-details>
 
-          <address-fields section="top">
-            <div class="root">
-               <snipcart-label for="phone">
-                 Phone number
-               </snipcart-label>
-               <snipcart-input name="phone">
-               </snipcart-input>
-            </div>
-           </address-fields>
+
+
+    <address-fields section="top">
+      <div class="root">
+
+        <snipcart-label for="phone">
+          Phone number
+        </snipcart-label>
+        <snipcart-input name="phone">
+        </snipcart-input>
+        <br>
+        <div class="">
+          This order will need to be picked up at our store in Strawberry Arkansas.
         </div>
-    </body>
+        <br>
+      </div>
+    </address-fields>
+  </div>
+</body>
+
 </html>
