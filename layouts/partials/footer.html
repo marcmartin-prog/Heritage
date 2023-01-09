@@ -40,6 +40,15 @@
   <p><a href="/privacy-policy">Privacy Policy</a> <br>  <a href="/terms-and-conditions">Terms and Conditions</a> </p>
 
 </footer>
+<script>
+  
+  let session = sessionStorage.getItem('session')
+  if (session == 'active')
+  document.querySelector('#popup').style.display = "none";
+  else {
+  document.querySelector('#popup').style.display = "block";
+  }
+  </script>
 <div class="privacy hide" id='privacy' >
   <p>By continuing to use this site, you are agreeing to accept our <a href="/terms-and-conditions">Terms and Conditions</a> and <a href="/privacy-policy">Privacy Policy</a></p>
   <button type="button" name="button" class="btn-tan" onclick="accept()">OK</button>
