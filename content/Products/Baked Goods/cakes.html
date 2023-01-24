@@ -25,18 +25,17 @@ description: "Large variety of freshly baked cakes to make dessert the easiest p
     <p>We keep most of these cakes on the shelf. If you order in advance, we'll make it as soon as possible. Can take up to two business days to bake large orders.</p>
     <select class="" id="bread" name="cake" onchange="cakeChoice(this.value)">
       <option value="select-bread" disabled selected hidden>CHOOSE YOUR CAKE</option>
+      <option value="Half Coconut Layered">Half of a Coconut Layered</option>
       <option value="Coconut Layered">Coconut Layered</option>
+      <option value="Half Carrot Layered">Half of a Carrot Layered</option>
       <option value="Carrot Layered">Carrot Layered</option>
+      <option value="Half German Chocolate Layered">Half of a German Chocolate Layered</option>
       <option value="German Chocolate Layered">German Chocolate Layered</option>
+      <option value="Half Italian Cream Layered">Half of an Italian Cream Layered</option>
       <option value="Italian Cream Layered">Italian Cream Layered</option>
       <option value="8x8 Chocolate Cake">8x8 Chocolate Cake</option>
       <option value="Mini Sugar Free Lemon Cake">Mini Sugar Free Lemon Cake</option>
       <option value="Mini Gluten Free Chocolate Cake">Mini Gluten Free Chocolate Cake</option>
-    </select>
-    <select class="" id="cakes" name="cake-size" onchange="cakeSize(this.value)">
-      <option value="size" disabled selected hidden>CHOOSE YOUR SIZE (Layer Cakes Only)</option>
-      <option value="half">Half</option>
-      <option value="whole">Whole</option>
     </select>
     <label for="quantity">HOW MANY CAKES? </label>
     <input type="number" id="quantity" value="1" name='quantity' onchange="quantity(this.value)">
@@ -45,17 +44,17 @@ description: "Large variety of freshly baked cakes to make dessert the easiest p
     <div class="prod-button">
       <div class="price">
         <span>$</span>
-        <span id="price">3.75</span>
+        <span id="price">4.50</span>
       </div>
       <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
       data-item-id="Fresh Layer Cake"
-      data-item-price="3.75"
+      data-item-price="4.50"
       data-item-url="/products/baked-goods/cakes"
       data-item-description="Freshly Baked Layer Cake"
       data-item-image="/images/cake.jpg"
       data-item-name="Freshly Baked Layer Cake"
       data-item-custom1-name="Style"
-      data-item-custom1-options="Coconut Layered [+8.74] | Carrot Layered [+8.74] | German Chocolate Layered [+8.74] | Italian Cream Layered [+8.74] | 8x8 Chocolate Cake [+1.14] | Mini Sugar Free Lemon Cake | Mini Gluten Free Chocolate Cake"
+      data-item-custom1-options="Half Coconut Layered [+10.49] | Coconut Layered [+25.49] | Half Carrot Layered [+9.49] | Carrot Layered [+23.49] | Half German Chocolate Layered [+11.99] | German Chocolate Layered [+28.49] | Half Italian Cream Layered [+9.49] | Italian Cream Layered [+23.49] | 8x8 Chocolate Cake [+1.39] | Mini Sugar Free Lemon Cake | Mini Gluten Free Chocolate Cake [ +0.69 ]"
       data-item-custom1-value="White"
       date-item-custom2-name="Size"
       data-item-custom2-options="Half | Whole [+12.50]"
