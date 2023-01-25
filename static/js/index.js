@@ -325,13 +325,13 @@ function pepperDO(){
 function mealDO(){
   if(document.querySelector('#meal').checked){
     button.setAttribute("data-item-custom22-value", "Yes");
-    updatedPrice = updatedPrice + 1.98;
+    updatedPrice = updatedPrice + 2.19;
     let num = updatedPrice.toFixed(2);
     document.querySelector('#price').innerText = num;
   }
  else{
   button.setAttribute("data-item-custom22-value", "No");
-  updatedPrice = updatedPrice - 1.98;
+  updatedPrice = updatedPrice - 2.19;
   let num = updatedPrice.toFixed(2);
   document.querySelector('#price').innerText = num;
 }
@@ -422,10 +422,10 @@ let count = document.querySelector('#quantity');
  function rollChoice(){
    button.setAttribute("data-item-custom1-value", roll.value);
    if(roll.value === "Raspberry Cream Cheese"){
-     document.querySelector('#price').innerText = 5.99;
+     document.querySelector('#price').innerText = 6.99;
    }
   else{
-   document.querySelector('#price').innerText = 5.79;
+   document.querySelector('#price').innerText = 6.79;
    }
  }
 
