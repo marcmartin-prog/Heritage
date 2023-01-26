@@ -171,6 +171,10 @@ function meatChoice(){
   button.setAttribute("data-item-custom2-value", meat.value);
 }
 
+function burgerMeatChoice(){
+  button.setAttribute("data-item-custom1-value", meat.value);
+}
+
 function doubleMeatChoice(){
   button.setAttribute("data-item-custom3-value", doubleMeat.value);
 }
@@ -183,12 +187,86 @@ function cheeseChoice(){
   button.setAttribute("data-item-custom5-value", cheese.value);
 }
 
+function burgerCheeseChoice(){
+  button.setAttribute("data-item-custom2-value", cheese.value);
+}
+
 function doubleCheeseChoice(){
   button.setAttribute("data-item-custom6-value", doubleCheese.value);
 }
 
 function tripleCheeseChoice(){
   button.setAttribute("data-item-custom7-value", tripleCheese.value);
+}
+
+function burgerLettuce(){
+  const checked = document.querySelector('#lettuce').checked;
+  button.dataset["itemCustom3Value"] = checked ? "true" : "false";
+}
+
+function burgerTomato(){
+  const checked = document.querySelector('#tomato').checked;
+  button.dataset["itemCustom4Value"] = checked ? "true" : "false";
+}
+
+function burgerDillPickle(){
+  const checked = document.querySelector('#dill-pickle').checked;
+  button.dataset["itemCustom5Value"] = checked ? "true" : "false";
+}
+
+function burgerOnion(){
+  const checked = document.querySelector('#onion').checked;
+  button.dataset["itemCustom6Value"] = checked ? "true" : "false";
+}
+
+function burgerBananaPepper(){
+  const checked = document.querySelector('#banana-pepper').checked;
+  button.dataset["itemCustom7Value"] = checked ? "true" : "false";
+}
+
+function burgerJalapeno(){
+  const checked = document.querySelector('#jalapeno').checked;
+  button.dataset["itemCustom8Value"] = checked ? "true" : "false";
+}
+
+function burgerMayo(){
+  const checked = document.querySelector('#mayo').checked;
+  button.dataset["itemCustom9Value"] = checked ? "true" : "false";
+}
+
+function burgerMustard(){
+  const checked = document.querySelector('#mustard').checked;
+  button.dataset["itemCustom10Value"] = checked ? "true" : "false";
+}
+
+function burgerRanch(){
+  const checked = document.querySelector('#ranch').checked;
+  button.dataset["itemCustom11Value"] = checked ? "true" : "false";
+}
+
+function burgerHoneyMustard(){
+  const checked = document.querySelector('#honey-mustard').checked;
+  button.dataset["itemCustom12Value"] = checked ? "true" : "false";
+}
+
+function burgerItalian(){
+  const checked = document.querySelector('#italian').checked;
+  button.dataset["itemCustom13Value"] = checked ? "true" : "false";
+}
+
+function burgerSalt(){
+  const checked = document.querySelector('#salt').checked;
+  button.dataset["itemCustom14Value"] = checked ? "true" : "false";
+}
+
+function burgerPepper(){
+  const checked = document.querySelector('#pepper').checked;
+  button.dataset["itemCustom15Value"] = checked ? "true" : "false";
+}
+
+function ketchup(){
+  const checked = document.querySelector('#ketchup').checked;
+  button.dataset["itemCustom16Value"] = checked ? "true" : "false";
 }
 
 function lettuce(){
@@ -516,13 +594,28 @@ function priceMinusTCheese(){
 function meal(){
   if(document.querySelector('#meal').checked){
     button.setAttribute("data-item-custom22-value", "Yes");
-    updatedPrice = updatedPrice + 1.98;
+    updatedPrice = updatedPrice + 2.19;
     let num = updatedPrice.toFixed(2);
     document.querySelector('#price').innerText = num;
   }
  else{
   button.setAttribute("data-item-custom22-value", "No");
-  updatedPrice = updatedPrice - 1.98;
+  updatedPrice = updatedPrice - 2.19;
+  let num = updatedPrice.toFixed(2);
+  document.querySelector('#price').innerText = num;
+}
+}
+
+function burgerMeal(){
+  if(document.querySelector('#meal').checked){
+    button.setAttribute("data-item-custom17-value", "Yes");
+    updatedPrice = updatedPrice + 2.19;
+    let num = updatedPrice.toFixed(2);
+    document.querySelector('#price').innerText = num;
+  }
+ else{
+  button.setAttribute("data-item-custom17-value", "No");
+  updatedPrice = updatedPrice - 2.19;
   let num = updatedPrice.toFixed(2);
   document.querySelector('#price').innerText = num;
 }
