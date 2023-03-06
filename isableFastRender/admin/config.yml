@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: "static/images/uploads"
+collections:
+  - name: "Specials" # Used in routes, e.g., /admin/collections/blog
+    label: "Specials" # Used in the UI
+    folder: "content" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "discounted-items"}
+      - {label: "Starting Date", name: "startdate", widget: "datetime", time_format: "false"}
+      - {label: "Ending Date", name: "enddate", widget: "datetime", time_format: "false"}
+      - {label: "First Discounted Product", name: "firstdiscountedprod", widget: "string"}
+      - {label: "Percentage of Discount", name: "percentage1", widget: "number"}
+      - {label: "Second Discounted Product", name: "seconddiscountedprod", widget: "string"}
+      - {label: "Percentage of Discount", name: "percentage2", widget: "number"}

@@ -1,0 +1,67 @@
+---
+title: "Grlled"
+date: 2021-02-04T20:30:59-06:00
+draft: false
+description: "Order our grilled cheese sandwich ahead of time to skip the line for this delicious deal."
+---
+
+<section class="prod-hero">
+  <div class="prod-accent"></div>
+  <h1>Grilled Cheese Sandwich</h1>
+  <div class="p-accent"></div>
+  <ul class="breadcrumb">
+    <li><a href="/">HOME > </a></li>
+      <li><a href="/products/sandwiches/">SANDWICHES > </a></li>
+    <li class="current">{{<param "title" >}}</li>
+  </ul>
+</section>
+
+<!-- Sandwich Product page section -->
+<section class="p-page">
+  <div class="product-image">
+    <img src="/images/grilled-cheese.jpg" alt="Heritage Ham sandwich">
+    <p>Looking for a quick and delicious meal that satisfies your cheesy cravings? Try our grilled cheese sandwich - a perfect combination of melted cheese and crispy bread that will leave you wanting more.</p>
+  </div>
+  <div class="product-options">
+    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
+      <option value="select-bread" disabled selected hidden>CHOOSE YOUR BREAD</option>
+      <option value="White">White</option>
+      <option value="Wheat">Wheat</option>
+      <option value="Sourdough">Sourdough</option>
+      <option value="Italian Parmesan">Italian Parmesan</option>
+    </select>
+    <div class="checkbox">
+      <label for="meal">Make it a meal. Add a side and drink for $2.19</label>
+      <input class="checked" type="checkbox" name="meal" id="meal" value="meal" onchange="mealGC()">
+    </div>
+    <hr class="p-page-hr">
+    <p>Online orders are typically ready for pickup in 15 minutes or less. You can choose your desired time at checkout. Available Wed, Thurs, Fri, and Sat. If you don't select a time, we will make it as soon as possible. </p>
+    <hr class="p-page-hr">
+    <div class="prod-button">
+      <div class="price">
+        <span>$</span>
+        <span id="price">3.99</span>
+      </div>
+      <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
+      data-item-id="Grilled Cheese Sandwich"
+      data-item-price="3.99"
+      data-item-url="/products/sandwiches/grilled-cheese"
+      data-item-description="Grilled cheese sandwich"
+      data-item-image="/images/grilled-cheese.jpg"
+      data-item-name="Grilled Cheese Sandwich"
+      data-item-custom1-name="Bread"
+      data-item-custom1-options="White | Wheat | Sourdough | Italian Parmesan"
+      data-item-custom1-value="White"
+      data-item-custom2-name="Notes"
+      data-item-custom3-name="Make It a Meal?"
+      data-item-custom3-options="Yes[+2.19] | No"
+      data-item-custom3-value="No"
+      data-item-custom4-name="When do you want the order ready?"
+      data-item-custom4-options="8:30 AM | 9:00 AM | 9:30 AM | 10:00 AM | 10:30 AM | 11:00 AM | 11:30 AM | 12:00 PM | 12:30 PM | 1:00 PM | 1:30 PM | 2:00 PM | 2:30 PM | 3:00PM | 3:30 PM | 4:00 PM | 4:30 PM | 5:00 PM"
+      >ADD TO CART <img src="/images/cart-white.png" alt="add-to-cart" style="height: 12px; margin-left: 8px;"></button>
+      <a href="" class="footer-link" onclick="startOver()">Start Over</a>
+    </div>
+  </div>
+
+</section>
+<hr>

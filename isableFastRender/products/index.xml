@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on Heritage Bake Shoppe</title>
+    <link>http://localhost:1313/products/</link>
+    <description>Recent content in Products on Heritage Bake Shoppe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Jan 2021 16:14:49 -0600</lastBuildDate><atom:link href="http://localhost:1313/products/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coffee</title>
+      <link>http://localhost:1313/products/coffee/</link>
+      <pubDate>Wed, 17 Feb 2021 10:53:13 -0600</pubDate>
+      
+      <guid>http://localhost:1313/products/coffee/</guid>
+      <description>CoffeeHOME &gt; Products &gt; CoffeeRelax with a cup of our strong, smooth JavaTaza coffee. It is grown in Central America, then hand-picked and dried. In Pennsylvania, the final preparations are finished, resulting in the coffee that will make your day brighter.
+Coffee is not available for purchase online. Below is a list of the different flavors that we keep in stock.
+FLAVORS:
+Southern Pecan
+Jamaican Me Crazy</description>
+    </item>
+    
+    <item>
+      <title>Grill Seasoning</title>
+      <link>http://localhost:1313/products/grill-seasoning/</link>
+      <pubDate>Wed, 17 Feb 2021 10:53:00 -0600</pubDate>
+      
+      <guid>http://localhost:1313/products/grill-seasoning/</guid>
+      <description>Grill SeasoningsHOME &gt; Products &gt; Grill SeasoningGrill to perfections with our line of Weaver&#39;s Dutch Country grill seasonings and sauces. Whether you&#39;re looking for just the right flavor for your juicy steaks, or doing chicken for supper, we have the perfect spices for you. Grill seasonings are not available for purchase online. Below is a list of the sauces and seasonings that we have.
+SAUCES:
+Bourbon Peach</description>
+    </item>
+    
+    <item>
+      <title>Bulk Foods</title>
+      <link>http://localhost:1313/products/bulk-foods/</link>
+      <pubDate>Wed, 17 Feb 2021 10:52:36 -0600</pubDate>
+      
+      <guid>http://localhost:1313/products/bulk-foods/</guid>
+      <description>Bulk FoodsHOME &gt; Products &gt; Bulk FoodsIf making your own foods is what you love, then this is for you. These are the same ingredients that we use in the delicious baked goods that we sell. You can buy in bulk and save, whether you need full cases, or just parts.
+Bulk foods are not available for purchase online. Below is a list of some of the bulk foods and ingredients that we keep in stock.</description>
+    </item>
+    
+    <item>
+      <title>Deli Trays</title>
+      <link>http://localhost:1313/products/deli-trays/</link>
+      <pubDate>Thu, 11 Feb 2021 10:58:02 -0600</pubDate>
+      
+      <guid>http://localhost:1313/products/deli-trays/</guid>
+      <description>Deli TraysHOME &gt; Products &gt; Deli TraysNeed lunch meat for the week? Or a deli tray for the party? With an inventory of fresh, high-quality meats and cheeses, we can fill the need. Choose the size you need. Most orders will be ready for pickup within 24 hours.
+CHOOSE YOUR SIZESmall (Serves 8-12)Medium (Serves 15-18)Large (Serves 20-25)MEAT OPTIONS:
+German Balogna
+Roast Beef
+Black Forest Ham</description>
+    </item>
+    
+  </channel>
+</rss>
