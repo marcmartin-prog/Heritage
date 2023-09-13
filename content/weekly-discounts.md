@@ -3,8 +3,8 @@ title: Weekly Discounts
 layout: discounted-items
 startdate: 2022-02-14T20:32:56.156Z
 enddate: 2022-02-26T20:32:56.166Z
-firstdiscountedprod: Rotisserie Chicken
+firstdiscountedprod: Black Forest Ham
 percentage1: 10
-seconddiscountedprod: Colby Cheese
+seconddiscountedprod: Cheddar Cheese
 percentage2: 10
 ---
