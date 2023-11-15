@@ -17,6 +17,13 @@ function accept(){
 
 privacyPolicy();
 
+// hide and show popup on first page hit.
+function hidePopup(){
+  document.querySelector('#popup').style.display = 'none'
+  sessionStorage.setItem('session', "active")
+}
+
+
 
 //horizontal scrolling for review Section
 
@@ -46,11 +53,6 @@ function startOver(){
 }
 
 
-// hide and show popup on first page hit.
-function hidePopup(){
-  document.querySelector('#popup').style.display = 'none'
-  sessionStorage.setItem('session', 'active')
-}
 
 
 

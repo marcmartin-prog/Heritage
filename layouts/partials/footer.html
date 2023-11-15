@@ -41,13 +41,13 @@
 
 </footer>
 <script>
-  
   let session = sessionStorage.getItem('session')
-  if (session == 'active')
+  if (session == "active")
   document.querySelector('#popup').style.display = "none";
   else {
-  document.querySelector('#popup').style.display = "none";
+  document.querySelector('#popup').style.display = "block";
   }
+  
   </script>
 <div class="privacy hide" id='privacy' >
   <p>By continuing to use this site, you are agreeing to accept our <a href="/terms-and-conditions">Terms and Conditions</a> and <a href="/privacy-policy">Privacy Policy</a></p>
