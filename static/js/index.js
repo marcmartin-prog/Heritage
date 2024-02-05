@@ -446,39 +446,47 @@ let count = document.querySelector('#quantity');
   const cookiePrice = document.querySelector('#price')
   button.setAttribute('data-item-custom1-value', bread.value)
   if(bread.value === 'Monster'){
-    cookiePrice.innerText = '4.99'
+    cookiePrice.innerText = '6.25'
   } else if(bread.value === 'Sugar Cookies-Half Dozen' || bread.value === 'No Bake Cookies-Half Dozen'){
-    cookiePrice.innerText = '3.75'
+    cookiePrice.innerText = '4.99'
   }else{
-    cookiePrice.innerText = '4.25'
+    cookiePrice.innerText = '5.25'
   }
+ }
+
+ function cupcakeChoice(){
+  const cupcakePrice = document.querySelector('#price')
+   button.setAttribute("data-item-custom1-value", bread.value);
+   if(bread.value === 'Magic Cupcake'){
+     cupcakePrice.innerText = "5.99";
+   } 
  }
 
  function cakeChoice(){
   const cakePrice = document.querySelector('#price')
    button.setAttribute("data-item-custom1-value", bread.value);
    if(bread.value === 'Half Carrot Layered' || bread.value === "Half Italian Cream Layered"){
-     cakePrice.innerText = "13.99";
+     cakePrice.innerText = "16.49";
    } else if(bread.value === 'Half Coconut Layered'){
     cakePrice.innerText = "14.99"
    }
    else if(bread.value === "Half German Chocolate Layered"){
-    cakePrice.innerText = '16.49'
+    cakePrice.innerText = '18.49'
    }
    else if(bread.value === 'Carrot Layered' || bread.value === 'Italian Cream Layered'){
-     cakePrice.innerText = '27.99'
+     cakePrice.innerText = '32.99'
    }
    else if(bread.value === 'Coconut Layered'){
     cakePrice.innerText = '29.99'
    }
    else if(bread.value === 'German Chocolate Layered'){
-    cakePrice.innerText = '32.99'
+    cakePrice.innerText = '36.99'
    }else if(bread.value === '8x8 Chocolate Cake'){
-     cakePrice.innerText = "5.89";
+     cakePrice.innerText = "7.99";
    }else if(bread.value === 'Mini Gluten Free Chocolate Cake'){
-     cakePrice.innerText = '5.19'
+     cakePrice.innerText = '5.99'
    } else{
-     cakePrice.innerText = "4.50";
+     cakePrice.innerText = "5.19";
    }
  }
 
@@ -502,7 +510,7 @@ let count = document.querySelector('#quantity');
  function rollChoice(){
    button.setAttribute("data-item-custom1-value", roll.value);
    if(roll.value === "Raspberry Cream Cheese"){
-     document.querySelector('#price').innerText = 6.99;
+     document.querySelector('#price').innerText = 7.29;
    }
   else{
    document.querySelector('#price').innerText = 6.79;

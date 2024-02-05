@@ -23,12 +23,11 @@ description: "From chocolate chip, to coconut topped, we have lots of fresh cupc
   </div>
   <div class="product-options">
     <p>Cupcakes sold by the half dozen. Choose your style or choose assortment and we'll get you some of our favorites!</p>
-    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
+    <select class="" id="bread" name="bread" onchange="cupcakeChoice(this.value)">
       <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
       <option value="Assortment">Assortment</option>
       <option value="Chocolate With Chocolate Icing">Chocolate With Chocolate Icing</option>
       <option value="Chocolate With White Icing">Chocolate With White Icing</option>
-      <option value="Coconut">Coconut</option>
       <option value="Red Velvet">Red Velvet</option>
       <option value="Vanilla">Vanilla</option>
       <option value="Magic Cupcake">Magic Cupcake</option>
@@ -40,18 +39,18 @@ description: "From chocolate chip, to coconut topped, we have lots of fresh cupc
     <div class="prod-button">
       <div class="price">
         <span>$</span>
-        <span id="price">4.50</span>
+        <span id="price">4.99</span>
         <p>Per Dozen</p>
       </div>
       <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
       data-item-id="Fresh Cupcakes"
-      data-item-price="4.50"
+      data-item-price="4.99"
       data-item-url="/products/baked-goods/cupcakes"
       data-item-description="Freshly Baked Cupcakes"
       data-item-image="/images/cupcake.jpg"
       data-item-name="Freshly Baked Cupcakes"
       data-item-custom1-name="Flavor"
-      data-item-custom1-options="Chocolate With Chocolate Icing | Chocolate With White Icing | Coconut | Red Velvet | Vanilla | Magic Cupcake"
+      data-item-custom1-options="Chocolate With Chocolate Icing | Chocolate With White Icing | Red Velvet | Vanilla | Magic Cupcake[+1.00]"
       data-item-custom1-value="Chocolate With Chocolate Icing"
       data-item-quantity="1"
       data-item-custom2-name = " Date Needed By:               Month:"
