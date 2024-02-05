@@ -38,7 +38,7 @@ function moveLeft(){
 function moveRight(){
   let slider = document.getElementById('review-parent');
   let review = document.querySelector(".review");
-  scrollByWidth = review.clientWidth;
+  scrollByWidth = review.clientWidth;0
   slider.scrollBy({left: scrollByWidth, top: 0, behavior: 'smooth'});
 
 }
@@ -430,11 +430,11 @@ let count = document.querySelector('#quantity');
    if(bread.value === "Italian Parmesan" ){
      document.querySelector('#price').innerText = '5.50';
    } else if (bread.value === 'Sourdough' || bread.value === "Wheat"){
-     document.querySelector('#price').innerText = '6.50';
+     document.querySelector('#price').innerText = '7.00';
    }else if (bread.value === 'White'){
        document.querySelector('#price').innerText = '4.50';
      }else if (bread.value === 'Mini-Banana Bread'){
-       document.querySelector('#price').innerText = '3.99';
+       document.querySelector('#price').innerText = '4.49';
      } else if(bread.value === 'Mini-Pumpkin Bread'){
       document.querySelector('#price').innerText = '5.49'
      } else if(bread.value === 'Sugar Free Banana Bread'){
