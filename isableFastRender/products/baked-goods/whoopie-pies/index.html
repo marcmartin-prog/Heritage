@@ -87,9 +87,9 @@
     <a href="#" class="cart-parent snipcart-checkout"><span class="snipcart-items-count"></span><span class="cart-word">CART</span><img src="/images/cart.png" alt="cart icon" class="cart "></a>
   </nav>
   
-  <div class="popup" id='popup'  hidden>
-    <h3>Winter 2022 Hours</h3>
-    <p>We're open Tues - Wed 8AM to 5PM and closed the first three weeks of January,  reopening January 25. Happy New Year!</p>
+  <div class="popup" id='popup' style="display: block;">
+    <h3>Winter 2023 Hours</h3>
+    <p>Thanksgiving: Open Nov 21, 22 Closed rest of week <br> Christmas: Open normal hours the week before Christmas, then closed till Jan 31.</p>
     <br>
     <img src="/images/new-year.jpg" alt="new year">
     <button type="button" name="button" class="btn-tan" onclick="hidePopup()">Go To Site</button>
@@ -130,11 +130,11 @@
     <div class="prod-button">
       <div class="price">
         <span>$</span>
-        <span id="price">1.29</span>
+        <span id="price">1.49</span>
       </div>
       <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
       data-item-id="Fresh Whoopie Pies"
-      data-item-price="1.29"
+      data-item-price="1.49"
       data-item-url="/products/baked-goods/whoopie-pies"
       data-item-description="Freshly Baked Whoopie Pies"
       data-item-image="/images/whoopie.jpg"
@@ -175,7 +175,7 @@
     <a href="https://goo.gl/maps/1hjHJcQFCkDoEH2f6" target="_blank" class="footer-link">SHOW ON MAP</a>
     <h4>CONTACT US</h4>
     <a href="tel:8705285200">870-528-5200</a> <br>
-    <a style="margin-top: 10px;" href="mailto:jason@heritagebakeshoppe.com">jason@heritagebakeshoppe.com</a>
+    <a style="margin-top: 10px;" href="mailto:tina@heritagebakeshoppe.com">tina@heritagebakeshoppe.com</a>
     <br>
     <br>
     <a href="/products/" class="footer-link">EXPLORE OUR PRODUCTS</a>
@@ -200,13 +200,9 @@
 
 </footer>
 <script>
+ 
+
   
-  let session = sessionStorage.getItem('session')
-  if (session == 'active')
-  document.querySelector('#popup').style.display = "none";
-  else {
-  document.querySelector('#popup').style.display = "none";
-  }
   </script>
 <div class="privacy hide" id='privacy' >
   <p>By continuing to use this site, you are agreeing to accept our <a href="/terms-and-conditions">Terms and Conditions</a> and <a href="/privacy-policy">Privacy Policy</a></p>

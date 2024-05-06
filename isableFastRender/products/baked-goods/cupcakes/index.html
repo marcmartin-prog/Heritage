@@ -87,9 +87,9 @@
     <a href="#" class="cart-parent snipcart-checkout"><span class="snipcart-items-count"></span><span class="cart-word">CART</span><img src="/images/cart.png" alt="cart icon" class="cart "></a>
   </nav>
   
-  <div class="popup" id='popup'  hidden>
-    <h3>Winter 2022 Hours</h3>
-    <p>We're open Tues - Wed 8AM to 5PM and closed the first three weeks of January,  reopening January 25. Happy New Year!</p>
+  <div class="popup" id='popup' style="display: block;">
+    <h3>Winter 2023 Hours</h3>
+    <p>Thanksgiving: Open Nov 21, 22 Closed rest of week <br> Christmas: Open normal hours the week before Christmas, then closed till Jan 31.</p>
     <br>
     <img src="/images/new-year.jpg" alt="new year">
     <button type="button" name="button" class="btn-tan" onclick="hidePopup()">Go To Site</button>
@@ -117,12 +117,11 @@
   </div>
   <div class="product-options">
     <p>Cupcakes sold by the half dozen. Choose your style or choose assortment and we'll get you some of our favorites!</p>
-    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
+    <select class="" id="bread" name="bread" onchange="cupcakeChoice(this.value)">
       <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
       <option value="Assortment">Assortment</option>
       <option value="Chocolate With Chocolate Icing">Chocolate With Chocolate Icing</option>
       <option value="Chocolate With White Icing">Chocolate With White Icing</option>
-      <option value="Coconut">Coconut</option>
       <option value="Red Velvet">Red Velvet</option>
       <option value="Vanilla">Vanilla</option>
       <option value="Magic Cupcake">Magic Cupcake</option>
@@ -134,18 +133,18 @@
     <div class="prod-button">
       <div class="price">
         <span>$</span>
-        <span id="price">4.50</span>
+        <span id="price">4.99</span>
         <p>Per Dozen</p>
       </div>
       <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
       data-item-id="Fresh Cupcakes"
-      data-item-price="4.50"
+      data-item-price="4.99"
       data-item-url="/products/baked-goods/cupcakes"
       data-item-description="Freshly Baked Cupcakes"
       data-item-image="/images/cupcake.jpg"
       data-item-name="Freshly Baked Cupcakes"
       data-item-custom1-name="Flavor"
-      data-item-custom1-options="Chocolate With Chocolate Icing | Chocolate With White Icing | Coconut | Red Velvet | Vanilla | Magic Cupcake"
+      data-item-custom1-options="Chocolate With Chocolate Icing | Chocolate With White Icing | Red Velvet | Vanilla | Magic Cupcake[+1.00]"
       data-item-custom1-value="Chocolate With Chocolate Icing"
       data-item-quantity="1"
       data-item-custom2-name = " Date Needed By:               Month:"
@@ -180,7 +179,7 @@
     <a href="https://goo.gl/maps/1hjHJcQFCkDoEH2f6" target="_blank" class="footer-link">SHOW ON MAP</a>
     <h4>CONTACT US</h4>
     <a href="tel:8705285200">870-528-5200</a> <br>
-    <a style="margin-top: 10px;" href="mailto:jason@heritagebakeshoppe.com">jason@heritagebakeshoppe.com</a>
+    <a style="margin-top: 10px;" href="mailto:tina@heritagebakeshoppe.com">tina@heritagebakeshoppe.com</a>
     <br>
     <br>
     <a href="/products/" class="footer-link">EXPLORE OUR PRODUCTS</a>
@@ -205,13 +204,9 @@
 
 </footer>
 <script>
+ 
+
   
-  let session = sessionStorage.getItem('session')
-  if (session == 'active')
-  document.querySelector('#popup').style.display = "none";
-  else {
-  document.querySelector('#popup').style.display = "none";
-  }
   </script>
 <div class="privacy hide" id='privacy' >
   <p>By continuing to use this site, you are agreeing to accept our <a href="/terms-and-conditions">Terms and Conditions</a> and <a href="/privacy-policy">Privacy Policy</a></p>
