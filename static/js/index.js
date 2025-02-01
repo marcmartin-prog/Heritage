@@ -429,16 +429,18 @@ let count = document.querySelector('#quantity');
    button.setAttribute("data-item-custom1-value", bread.value);
    if(bread.value === "Italian Parmesan" ){
      document.querySelector('#price').innerText = '5.50';
-   } else if (bread.value === 'Sourdough' || bread.value === "Wheat"){
+   } else if (bread.value === 'Sourdough'){
      document.querySelector('#price').innerText = '7.00';
    }else if (bread.value === 'White'){
        document.querySelector('#price').innerText = '4.50';
      }else if (bread.value === 'Mini-Banana Bread'){
-       document.querySelector('#price').innerText = '4.49';
+       document.querySelector('#price').innerText = '5.99';
      } else if(bread.value === 'Mini-Pumpkin Bread'){
       document.querySelector('#price').innerText = '5.49'
      } else if(bread.value === 'Sugar Free Banana Bread'){
       document.querySelector('#price').innerText = '5.19'
+     } else if(bread.value === 'Wheat'){
+      document.querySelector('#price').innerText = '6.50'
      }
  }
 
@@ -446,20 +448,23 @@ let count = document.querySelector('#quantity');
   const cookiePrice = document.querySelector('#price')
   button.setAttribute('data-item-custom1-value', bread.value)
   if(bread.value === 'Monster'){
-    cookiePrice.innerText = '6.25'
+    cookiePrice.innerText = '6.99'
   } else if(bread.value === 'Sugar Cookies-Half Dozen' || bread.value === 'No Bake Cookies-Half Dozen'){
     cookiePrice.innerText = '4.99'
   }else{
-    cookiePrice.innerText = '5.25'
+    cookiePrice.innerText = '5.99'
   }
  }
 
  function cupcakeChoice(){
   const cupcakePrice = document.querySelector('#price')
    button.setAttribute("data-item-custom1-value", bread.value);
-   if(bread.value === 'Magic Cupcake'){
+   if(bread.value === 'Magic Cupcake'|| bread.value === 'Red Velvet'){
      cupcakePrice.innerText = "5.99";
-   } 
+   } else if(bread.value === 'Chocolate With Chocolate Icing'|| bread.value === 'Chocolate With White Icing'){
+    cupcakePrice.innerText = "5.50";
+  } 
+
  }
 
  function cakeChoice(){
@@ -486,7 +491,7 @@ let count = document.querySelector('#quantity');
    }else if(bread.value === 'Mini Gluten Free Chocolate Cake'){
      cakePrice.innerText = '5.99'
    } else{
-     cakePrice.innerText = "5.19";
+     cakePrice.innerText = "5.99";
    }
  }
 
@@ -510,10 +515,10 @@ let count = document.querySelector('#quantity');
  function rollChoice(){
    button.setAttribute("data-item-custom1-value", roll.value);
    if(roll.value === "Raspberry Cream Cheese"){
-     document.querySelector('#price').innerText = 7.29;
+     document.querySelector('#price').innerText = 7.49;
    }
   else{
-   document.querySelector('#price').innerText = 6.79;
+   document.querySelector('#price').innerText = 7.29;
    }
  }
 
