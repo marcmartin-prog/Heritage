@@ -5,6 +5,6 @@ startdate: 2022-02-14T20:32:56.156Z
 enddate: 2022-02-26T20:32:56.166Z
 firstdiscountedprod: Roast Beef
 percentage1: 10
-seconddiscountedprod: Smoked Gouda Cheese
+seconddiscountedprod: Swiss Cheese
 percentage2: 10
 ---
