@@ -44,7 +44,6 @@ function moveRight(){
 }
 
 
-
 // start over code
 
 function startOver(){
