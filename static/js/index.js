@@ -431,7 +431,7 @@ let count = document.querySelector('#quantity');
    } else if (bread.value === 'Sourdough'){
      document.querySelector('#price').innerText = '7.00';
    }else if (bread.value === 'White'){
-       document.querySelector('#price').innerText = '4.50';
+       document.querySelector('#price').innerText = '5.00';
      }else if (bread.value === 'Mini-Banana Bread'){
        document.querySelector('#price').innerText = '5.99';
      } else if(bread.value === 'Mini-Pumpkin Bread'){
