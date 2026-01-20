@@ -488,7 +488,7 @@ let count = document.querySelector('#quantity');
    }else if(bread.value === '8x8 Chocolate Cake'){
      cakePrice.innerText = "7.99";
    }else if(bread.value === 'Mini Gluten Free Chocolate Cake'){
-     cakePrice.innerText = '5.99'
+     cakePrice.innerText = '7.99'
    } else{
      cakePrice.innerText = "5.99";
    }
